@@ -1,0 +1,15 @@
+.left_btn,
+.right_btn {
+    font-size: 28px;
+    font-family: 'Helvetica', 'Times New Roman',  sans-serif;
+}
+
+.left_btn {
+    background-color: hsla(160, 50%, 40%, 0.8);
+    color: rgb(29, 24, 26)
+}
+
+.right_btn {
+    background-color: blanchedalmond;
+    color: hsl(10, 50%,40%)
+}
