@@ -40,6 +40,7 @@ button {
   opacity: 0%;
   text-align: center;
 }
+
 .popup-modal p {
   margin-bottom: 24px
 }
@@ -59,5 +60,45 @@ button {
 
 .backdrop.show {
   opacity: 30%;
+}
+
+
+/* solution */
+/* .popup-modal.show {
+  animation: 1s ease show_modal;
+}
+.popup-modal {
+  animation: 4s linear hide_modal;
+}
+
+@keyframes show_modal {
+  from {
+    top: 10%;
+    opacity: 0;
+  }
+
+  to {
+   top: 50%;
+   opacity: 1;
+  }
+}
+
+@keyframes hide_modal {
+  from {
+    top: 50%;
+  }
+
+  to {
+   top: 0;
+  }
+} */
+
+.popup-modal {
+  transition: transform .3s ease-in-out, opacity .4s ease;
+  transform: translate(-50%, -100%);
+}
+
+.popup-modal.show {
+  transform: translate(-50%, -50%);
 }
 
