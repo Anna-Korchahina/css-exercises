@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Methods for Adding CSS</title>
-  </head>
-  <body>
-    <div>Style me via the external method!</div>
-    <p>I would like to be styled with the internal method, please.</p>
-    <button>Inline Method</button>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Methods for Adding CSS</title>
+  <style>
+    div.internal {
+      background: red;
+      color: white;
+      font-size: 32px;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    p.internal {
+      background: green;
+      color: white;
+      font-size: 18px
+    }
+
+    button.internal {
+      background: orange;
+      font-size: 18px
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="inline" style="background: red; color:white; font-size:32px; align-items: center;font-weight: bold;">Style
+    me via the external method!</div>
+  <p class="inline" style="background: green; color:white; font-size:18px">I would like to be styled with the internal
+    method, please.</p>
+  <button class="inline" style="background: orange; font-size:18px">Inline Method</button>
+
+  <br>
+  <br>
+
+  <div class="internal">Style me via the external method!</div>
+  <p class="internal">I would like to be styled with the internal method, please.</p>
+  <button class="internal">Inline Method</button>
+
+  <br>
+  <br>
+
+  <div class="external">Style me via the external method!</div>
+  <p class="external">I would like to be styled with the internal method, please.</p>
+  <button class="external">Inline Method</button>
+</body>
+
 </html>

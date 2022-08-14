@@ -1,0 +1,18 @@
+div.external {
+    background: red;
+    color: white;
+    font-size: 32px;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  p.external {
+    background: green;
+    color: white;
+    font-size: 18px
+  }
+
+  button.external {
+    background: orange;
+    font-size: 18px
+  }
